@@ -1,15 +1,15 @@
 
 const encodedAnswers = [
     "RkxBR3tZb3VGb3VuZE1lfQ==",    
-    "RkxBR3tRUkZMNEdDMGQzfQ==",    
+    "RkxBR3tRUkZMNEdDMEQzfQ==",    
     "RmxhZ3tkM2MwZGVtZX0=",        
     "RmxhZ3tJc24ndFRoYXRPYnZpb3VzfQ==",  
     "RkxBR3tIMWRkZW59",            
-    "RkxBR3tDQUVTQVI=",            
+    "RkxBR3tDQUVTQVJ9",            
     "RkxBR3tHT09ESjBCfQ==",        
     "RkxBR3tDNHB0dXJlVGgzRmw0Z30=", 
     "RkxBR3tOMWMzfQ==",            
-    "RkxBR3tXYXNuJ3RSZWFsbHlIYXJkP30="   
+    "RkxBR3tXYXNu4oCYdFJlYWxseUhhcmQ/fQ=="   
 ];
 
 let completedTasks = 0;  
