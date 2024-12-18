@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,6 +15,25 @@
         <button id="submitNickname">Submit</button>
     </div>
 
-    <script src="scripts.js"></script>
+    <script>
+        document.getElementById('submitNickname').addEventListener('click', function () {
+            const nickname = document.getElementById('nickname').value.trim();
+            if (nickname) {
+                // Retrieve existing leaderboard or create a new one
+                let leaderboard = JSON.parse(localStorage.getItem('leaderboard')) || [];
+                
+                // Add new nickname
+                leaderboard.push(nickname);
+                
+                // Save the updated leaderboard back to localStorage
+                localStorage.setItem('leaderboard', JSON.stringify(leaderboard));
+                
+                // Redirect to the leaderboard page
+                window.location.href = 'leaderboard.html';
+            } else {
+                alert('Please enter a valid nickname!');
+            }
+        });
+    </script>
 </body>
 </html>
