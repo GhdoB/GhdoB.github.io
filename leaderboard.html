@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,10 +10,28 @@
     <div class="container">
         <h1>Leaderboard</h1>
         <ul id="leaderboard">
-            <!-- Leaderboard entries will be displayed here -->
+            <!-- Leaderboard entries will be dynamically populated here -->
         </ul>
+        <button onclick="window.location.href='index.html'">Back to Home</button>
     </div>
 
-    <script src="scripts.js"></script>
+    <script>
+        window.onload = function () {
+            // Retrieve leaderboard from localStorage
+            const leaderboard = JSON.parse(localStorage.getItem('leaderboard')) || [];
+            const leaderboardList = document.getElementById('leaderboard');
+
+            // Populate the leaderboard
+            if (leaderboard.length > 0) {
+                leaderboard.forEach((player, index) => {
+                    const listItem = document.createElement('li');
+                    listItem.textContent = `${index + 1}. ${player}`;
+                    leaderboardList.appendChild(listItem);
+                });
+            } else {
+                leaderboardList.innerHTML = '<li>No players have completed the game yet.</li>';
+            }
+        };
+    </script>
 </body>
 </html>
