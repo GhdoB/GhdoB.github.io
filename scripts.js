@@ -9,7 +9,7 @@ const encodedAnswers = [
     "RkxBR3tHT09ESjBCfQ==",        
     "RkxBR3tDNHB0dXJlVGgzRmw0Z30=", 
     "RkxBR3tOMWMzfQ==",            
-    "RkxBR3tXYXNu4oCYdFJlYWxseUhhcmR9"   
+    "RkxBR3tXYXNuJ3RSZWFsbHlIYXJkfQ=="   
 ];
 
 let completedTasks = 0;  
@@ -22,7 +22,7 @@ function checkAnswer(taskNumber) {
     const userAnswer = document.getElementById('task' + taskNumber).value.trim();
     const feedbackElement = document.getElementById('task' + taskNumber + '-feedback');
 
-    if (userAnswer === answers[taskNumber - 1]) {
+    if (userAnswer.normalize() === answers[taskNumber - 1].normalize()) {
         feedbackElement.textContent = 'Correct Flag';
         feedbackElement.className = 'feedback green';
         feedbackElement.style.fontWeight = 'bold';
