@@ -9,7 +9,7 @@ const encodedAnswers = [
     "RkxBR3tHT09ESjBCfQ==",        
     "RkxBR3tDNHB0dXJlVGgzRmw0Z30=", 
     "RkxBR3tOMWMzfQ==",            
-    "RkxBR3tXYXNu4oCYdFJlYWxseUhhcmQ/fQ=="   
+    "RkxBR3tXYXNu4oCYdFJlYWxseUhhcmR9"   
 ];
 
 let completedTasks = 0;  
