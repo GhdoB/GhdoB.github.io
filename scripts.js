@@ -1,6 +1,6 @@
 const answers = [
-    "FLAG{YouFoundMe}", "flag2", "flag3", "flag4", "flag5",
-    "flag6", "flag7", "flag8", "flag9", "flag10"
+    "FLAG{YouFoundMe}", "FLAG{QRFL4GC0D3", "Flag{d3c0deme}", "Flag{Isn'tThatObvious}", "FLAG{H1dden}",
+    "FLAG{CAESAR}", "FLAG{GOODJ0B}", "FLAG{C4ptureTh3Fl4g}", "FLAG{N1c3}", "FLAG{Wasn'tReallyHard?}"
 ];
 
 let completedTasks = 0;  // Track completed tasks
